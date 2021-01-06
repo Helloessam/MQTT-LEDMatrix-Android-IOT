@@ -1,5 +1,5 @@
 # MQTT-LEDMatrix-AndroidOfThings
-The project has been created to provide reliable open-source implementations of MQTT messaging protocol for small sensors / hardware devices and mobile devices Controled by Android of Things Application
+The project has been created to provide reliable open-source implementations of MQTT messaging protocol for small sensors / cloud connected devices Controlled by Android of Things Application
 
 
 
