@@ -133,47 +133,7 @@ public class MainActivity extends AppCompatActivity {
                     });
                     Toast.makeText(MainActivity.this,"Connected",Toast.LENGTH_LONG).show();
 
-                    try {
-                        client.subscribe("outx",0);
-                    }
-                    catch (MqttException e)
-                    {
-                        e.printStackTrace();
-                    }
-
-                    client.setCallback(new MqttCallback() {
-                        @Override
-                        public void connectionLost(Throwable cause) {
-
-                        }
-
-                        @Override
-                        public void messageArrived(String topic, MqttMessage message) throws Exception {
-                            //Counter.setText(new String(message.getPayload()));
-                        }
-
-                        @Override
-                        public void deliveryComplete(IMqttDeliveryToken token) {
-
-                        }
-                    });
-                }
-
-                @Override
-                public void onFailure(IMqttToken asyncActionToken, Throwable exception) {
-
-                    Toast.makeText(MainActivity.this,"Check Network",Toast.LENGTH_LONG).show();
-
-                }
-
-            });
-        } catch (MqttException e) {
-            e.printStackTrace();
-        }
     }
-    public void setSub()
-    {
-
-    }
+    
 
 }
